@@ -10,21 +10,23 @@ const transferToMomoSubscriber = async (req, res) => {
     logger.info('Transfer to MoMo subscriber requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
-    console.log("hi");
+    console.log('hi');
     // TODO: Implement transfer to MoMo subscriber logic
     res.status(501).json({
       success: false,
       message: 'Transfer to MoMo subscriber not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
-    logger.error('Transfer to MoMo subscriber failed', { error: error.message });
+    logger.error('Transfer to MoMo subscriber failed', {
+      error: error.message,
+    });
     res.status(500).json({
       success: false,
       error: 'Transfer to MoMo subscriber failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -39,21 +41,21 @@ const transferToOtherNetwork = async (req, res) => {
     logger.info('Transfer to other network requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement transfer to other network logic
     res.status(501).json({
       success: false,
       message: 'Transfer to other network not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Transfer to other network failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Transfer to other network failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -68,21 +70,21 @@ const momoAndBillPayment = async (req, res) => {
     logger.info('MoMo and bill payment requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement MoMo and bill payment logic
     res.status(501).json({
       success: false,
       message: 'MoMo and bill payment not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('MoMo and bill payment failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'MoMo and bill payment failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -97,21 +99,21 @@ const buyAirtime = async (req, res) => {
     logger.info('Buy airtime requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement buy airtime logic
     res.status(501).json({
       success: false,
       message: 'Buy airtime not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Buy airtime failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Buy airtime failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -126,21 +128,21 @@ const buyData = async (req, res) => {
     logger.info('Buy data requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement buy data logic
     res.status(501).json({
       success: false,
       message: 'Buy data not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Buy data failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Buy data failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -155,21 +157,21 @@ const scheduleAirtime = async (req, res) => {
     logger.info('Schedule airtime requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement schedule airtime logic
     res.status(501).json({
       success: false,
       message: 'Schedule airtime not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Schedule airtime failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Schedule airtime failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -184,21 +186,21 @@ const allowCashout = async (req, res) => {
     logger.info('Allow cashout requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement allow cashout logic
     res.status(501).json({
       success: false,
       message: 'Allow cashout not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Allow cashout failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Allow cashout failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -213,21 +215,21 @@ const balanceCheck = async (req, res) => {
     logger.info('Balance check requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement balance check logic
-    res.status(501).json({
+    res.status(200).json({
       success: false,
-      message: 'Balance check not implemented yet',
-      timestamp: new Date().toISOString()
+      message: 'Balance of GHC',
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Balance check failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Balance check failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -242,21 +244,21 @@ const myApprovals = async (req, res) => {
     logger.info('My approvals requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement my approvals logic
     res.status(501).json({
       success: false,
       message: 'My approvals not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('My approvals failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'My approvals failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -271,21 +273,21 @@ const bankToWallet = async (req, res) => {
     logger.info('Bank to wallet requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement bank to wallet logic
     res.status(501).json({
       success: false,
       message: 'Bank to wallet not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Bank to wallet failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Bank to wallet failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -300,21 +302,21 @@ const walletToBank = async (req, res) => {
     logger.info('Wallet to bank requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement wallet to bank logic
     res.status(501).json({
       success: false,
       message: 'Wallet to bank not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Wallet to bank failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Wallet to bank failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -329,21 +331,21 @@ const loanRequest = async (req, res) => {
     logger.info('Loan request requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement loan request logic
     res.status(501).json({
       success: false,
       message: 'Loan request not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('Loan request failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'Loan request failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -358,21 +360,21 @@ const momoPay = async (req, res) => {
     logger.info('MoMo pay requested', {
       ip: req.ip,
       userAgent: req.get('User-Agent'),
-      body: req.body
+      body: req.body,
     });
 
     // TODO: Implement MoMo pay logic
     res.status(501).json({
       success: false,
       message: 'MoMo pay not implemented yet',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
     logger.error('MoMo pay failed', { error: error.message });
     res.status(500).json({
       success: false,
       error: 'MoMo pay failed',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 };
@@ -390,5 +392,5 @@ export {
   bankToWallet,
   walletToBank,
   loanRequest,
-  momoPay
+  momoPay,
 };
