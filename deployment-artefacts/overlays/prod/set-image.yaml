@@ -7,4 +7,8 @@ spec:
     spec:
       containers:
         - name: devops-training-deployment
+<<<<<<< HEAD
           image: 269700396904.dkr.ecr.eu-central-1.amazonaws.com/training-repo:devsecops-training-17462770397
+=======
+          image: 269700396904.dkr.ecr.eu-central-1.amazonaws.com/training-repo:devsecops-training-17467813251
+>>>>>>> 9b0fe5de242761fe56a74b55399070b6324a4937

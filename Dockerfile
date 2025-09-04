@@ -13,7 +13,11 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 
 # Install dependencies
+<<<<<<< HEAD
 RUN npm ci --only=production
+=======
+RUN npm ci --omit=dev
+>>>>>>> 9b0fe5de242761fe56a74b55399070b6324a4937
 
 # Install PM2 globally for process management
 RUN npm install -g pm2
